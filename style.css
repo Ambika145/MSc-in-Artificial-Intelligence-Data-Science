@@ -102,10 +102,10 @@ section {
     max-height: 100dvh;
     box-sizing: border-box;
     overflow: hidden;
-    --hero-form-iframe-h: min(320px, calc(100dvh - 19rem));
-    --hero-form-scroll-h: min(320px, calc(100dvh - 17rem));
-    --hero-form-card-pad-y: 1.5rem;
-    --hero-form-card-pad-x: 1.375rem;
+    --hero-form-iframe-h: min(310px, calc(100dvh - 19.5rem));
+    --hero-form-scroll-h: min(310px, calc(100dvh - 17.5rem));
+    --hero-form-card-pad-y: 1.4rem;
+    --hero-form-card-pad-x: 1.3rem;
     --hero-form-title-size: 1.2rem;
   }
 
@@ -190,7 +190,7 @@ section {
     min-height: 0;
     align-self: center;
     overflow: hidden;
-    max-width: 23rem;
+    max-width: 22.5rem;
     width: 100%;
   }
 
@@ -597,8 +597,8 @@ section {
 @media screen and (min-width: 992px) {
   .hero-enquiry-card .npf_wgts,
   .hero-enquiry-card .npf_wgts iframe {
-    height: var(--hero-form-iframe-h, min(320px, calc(100dvh - 19rem))) !important;
-    max-height: var(--hero-form-iframe-h, min(320px, calc(100dvh - 19rem))) !important;
+    height: var(--hero-form-iframe-h, min(310px, calc(100dvh - 19.5rem))) !important;
+    max-height: var(--hero-form-iframe-h, min(310px, calc(100dvh - 19.5rem))) !important;
   }
 }
 
@@ -826,7 +826,7 @@ section {
   .hero-right {
     align-self: center;
     margin-top: 0;
-    max-width: 25rem;
+    max-width: 22.5rem;
     width: 100%;
   }
 
@@ -835,28 +835,22 @@ section {
   }
 }
 
-/* 100% zoom on wide desktop — larger enquiry form */
+/* 100% zoom on wide desktop — medium enquiry form */
 @media screen and (min-width: 1200px) and (min-height: 901px) {
   .hero-section {
-    --hero-form-iframe-h: min(360px, calc(100dvh - 17rem));
-    --hero-form-scroll-h: min(360px, calc(100dvh - 15rem));
-    --hero-form-card-pad-y: 1.625rem;
-    --hero-form-card-pad-x: 1.5rem;
-    --hero-form-title-size: 1.35rem;
+    --hero-form-iframe-h: min(330px, calc(100dvh - 18rem));
+    --hero-form-scroll-h: min(330px, calc(100dvh - 16rem));
+    --hero-form-card-pad-y: 1.45rem;
+    --hero-form-card-pad-x: 1.35rem;
+    --hero-form-title-size: 1.25rem;
   }
 
   .hero-right {
-    max-width: 25rem;
-  }
-
-  .hero-enquiry-card {
-    border-radius: 1.375rem;
-    box-shadow: 0 1rem 2.5rem rgba(49, 27, 146, 0.3);
+    max-width: 22.5rem;
   }
 
   .hero-enquiry-card h3 {
-    margin-bottom: 1rem;
-    letter-spacing: 0.08em;
+    margin-bottom: 0.875rem;
   }
 }
 
@@ -1362,7 +1356,7 @@ section {
 
 .features-section {
   background-color: #fff;
-  padding: 56px 0 64px !important;
+  padding: 80px 0 64px !important;
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -1395,6 +1389,7 @@ section {
   font-weight: 800;
   text-align: center;
   margin: 0 0 36px;
+  padding-top: 8px;
   line-height: 1.2;
   background: linear-gradient(90deg, #1a237e 0%, #4527a0 42%, #00acc1 100%);
   -webkit-background-clip: text;
